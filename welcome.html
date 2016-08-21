@@ -13,11 +13,31 @@
 	-webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
 	-o-background-size: 100%; /* Opera 9.6+ */
 	background-size: 100%; /* Современные браузеры */
+  
      }
   
   H1 {
      font-family:"Lucida", Courier, monospace;  /* Гарнитура текста */ 
      font-size: 250%; /* Размер шрифта в процентах */ 
+     color: white;
+     text-align: center;
+
+   } 
+
+  H2 {
+     font-family:"Lucida", Courier, monospace;  /* Гарнитура текста */ 
+     font-size: 150%; /* Размер шрифта в процентах */ 
+     color: white;
+     text-align: center;
+
+   } 
+
+  H3 {
+     font-family:"Lucida", Courier, monospace;  /* Гарнитура текста */ 
+     font-size: 100%; /* Размер шрифта в процентах */ 
+     color: white;
+     text-align: center;
+
    } 
    
 
@@ -25,6 +45,12 @@
   P{
     font-family: Verdana, Arial, Helvetica, sans-serif; 
     font-size: 11pt; /* Размер шрифта в пунктах */ 
+   }
+
+  img.photo{
+    width: 20%;
+    display: block;
+    margin: 0 auto;
    }
    
 
@@ -47,112 +73,15 @@
     font-size: 250%; /* Размер шрифта в процентах */ 
     
    }
-   
-    #StaticBox,#NonStaticBox{
-    width:390px;
-    background-color:9966FF;
-    border-radius: 20px;
-    -o-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    }
-    p#StaticBox,p#NonStaticBox{
-    padding: 0.55%; /* Поля вокруг текста */
-    background: 9966FF; /* Цвет фона */ 
-/*     font-family:"Lucida", Courier, monospace;  /* Гарнитура текста */  
-    font-size: 140%; /* Размер шрифта в процентах */ 
-    color:  #00ff00;
-    
-   }
-   
-   a#StaticBox,a#NonStaticBox{
-   text-decoration: none;
-   }
-   
-  #NonStaticBox:hover {
-    width:390px;
-    height:100px;
-    border-radius: 20px;
-    -o-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    display: block;
-    }
-    
-   #NonStaticBox:hover р{
-      padding: 0.55%; /* Поля вокруг текста */
-    background: 9966FF; /* Цвет фона */ 
-    font-size: 140%; /* Размер шрифта в процентах */ 
-    color:  #00ff00;
-    }
-    
-    #MailBox{
+   #bottomright {
     position: absolute;
-    right: 9px;
-    top: 350px;
-    width:250px;
-    height:60px;
-    font-size: 14pt;
-    -o-font-size: 14pt;
-    -webkit-font-size: 14pt;
-    background-color:9966FF;
-    padding: 2.55%;
-    border-radius: 20px;
-    -o-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    text-decoration: none;
-    }
-    a#MailBox{
-     text-decoration: none;
-    }
-  
+    bottom: 8px;
+    right: 1px;
+    font-size: 18px;
+    color: green;
+}
    
-    ul {
-    width: 30%; /* Ширина меню */ 
-    list-style: none; /* Для списка убираем маркеры */
-    margin: 0; /* Нет отступов вокруг */
-    padding: 0; /* Убираем поля вокруг текста */
-    font-family: Arial, sans-serif; /* Рубленый шрифт для текста меню */
-    font-size: 15pt; /* Размер названий в пункте меню */
-    background-color:9966FF;
-    border-radius: 20px;
-    -o-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    left:8px; 
-    top:0px;
-    }
-    
-    li ul {
-    position: absolute; /* Подменю позиционируются абсолютно */
-    display: none; /* Скрываем подменю */
-    margin-left: 26%; /* Сдвигаем подменю вправо */ 
-    margin-top: 29.5%; /* Сдвигаем подменю вверх */
-    }
-    
-    li a {
-    display: block;
-    padding: 5px; /* Поля вокруг надписи */
-    text-decoration: none; /* Подчеркивание у ссылок убираем */
-    color: #2F4F4F; /* Цвет текста */
-    border-bottom: none; /* Границу снизу не проводим */
-    }
-    
-    li a:hover {
-    color: #ffe; /* Цвет текста активного пункта */
-    background-color: #F5F5F5; /* Цвет фона активного пункта */
-    border-radius: 20px;
-    -o-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    }
-    li:hover ul { 
-    display: block; /* При выделении пункта курсором мыши отображается подменю */
-    }
-    
-    img.photo{
-    width: 20%;
-    position: relative; 
-    bottom: 320px; 
-    left: 78%;
-    line-height: 1px;
-   }
+ 
 
 
   </style>
@@ -160,25 +89,16 @@
  
 <body>
 <!--  Title of the page  -->
-<p id="TitleBox" align="center">Ivan Shvetsov</p>
-<ul> 
-  <li><a href="https://www.ekp.kit.edu/"><font color=#2F4F4F>Home institute: <p>Institut f&uumlr Experimentelle Kernphysik,</p> <p>Karlsruhe Institute of Technology (KIT)</p></font></a></li>
-  <li><a href="http://cms.web.cern.ch/"><font color=#2F4F4F>Experiment: CMS</font></a></li> 
-  <li><a  href="https://github.com/ishvetso"><font color=#2F4F4F>Code on GitHub</font></a></li> 
-  <li><a href="Shvetsov_diploma.pdf"> <font color=#2F4F4F>Diploma</font></a></li> 
-  <li><a href="private_cms/summary-JME-14-001.pdf"> <font color=#2F4F4F>Work for JME-14-001</font></a></li> 
-  <li><a><font color=#2F4F4F>Publications</font></a> 
-  <ul>  
-    <li><a href="https://cds.cern.ch/record/1751454"><font color=#2F4F4F>Pileup Removal Algorithms</font></a></li>  
-    <li><a href="http://cds.cern.ch/record/1702400?ln=en"><font color=#2F4F4F>Search for anomalous Wtb couplings and top FCNC in t-channel single-top-quark events</font></a></li> 
-    <li><a href="http://uzmu.phys.msu.ru/issue/120108.pdf"><font color=#2F4F4F>Methods of measuring background processes from experimental data in the analysis of  single top production in the CMS experiment of LHC</font></a></li>  
-  </ul>
-    </li> 
-</ul>
+<H1>Ivan Shvetsov<H1>
 <img class="photo" src="photo.jpg"></img>
-<div id="MailBox">
-<a href="mailto:ivan.shvetsov@cern.ch">&#9993 ivan.shvetsov@cern.ch</a><br>
-Skype: ivan.shvetsov90
-</div>
+<H2>PhD student at KIT<H2>
+<H2><a href="CV_Ivan_Shvetsov_2016.pdf">CV</a>  - <a href="Shvetsov_diploma.pdf">Diploma thesis</a>  - <a href="http://inspirehep.net/author/profile/I.Shvetsov.1">INSPIRE</a> - <a href="https://scholar.google.ch/citations?hl=ru&user=oZalXWUAAAAJ">GS</a><H2>
+<H3>Home Institute: Institut f&uumlr Experimentelle Kernphysik (<a href="http://www.ekp.kit.edu/english/index.php">IEKP</a>)<H3>
+<H3>Experiment: Compact Muon Solenoid (<a href="http://cms.web.cern.ch">CMS</a>)</H3>
+<H3>Office: 9-10, Blg.30.23 (Campus South, KIT)</H3>
+<H3>Phone: ++49 (0)721 608 43559</H3>
+<H3>e-mail: <a href="mailto:ivan.shvetsov@cern.ch">ivan.shvetsov@cern.ch</a></H3>
+<H3><a href="mailto:ivan.shvetsov@cern.ch"> <img border="0" alt="W3Schools" src="http://sweetlifebake.com/wp-content/uploads/2011/10/Black-mail-icon.png" width="25" height="25"></a>   <a href="skype:ivan.shvetsov90?chat"><img border="0" alt="W3Schools" src="http://img06.deviantart.net/bece/i/2014/004/3/b/skype_icon_by_theholdenb12-d6z39qe.png" width="25" height="25"></a></H3>
+
 </body>
 </HTML>
